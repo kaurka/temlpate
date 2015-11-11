@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Proposal Positions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Proposal</th>
+      <th>Price item</th>
+      <th>Template position</th>
+      <th>Price</th>
+      <th>Change marker</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @proposal_positions.each do |proposal_position| %>
+      <tr>
+        <td><%= proposal_position.proposal_id %></td>
+        <td><%= proposal_position.price_item_id %></td>
+        <td><%= proposal_position.template_position_id %></td>
+        <td><%= proposal_position.price %></td>
+        <td><%= proposal_position.change_marker %></td>
+        <td><%= link_to 'Show', proposal_position %></td>
+        <td><%= link_to 'Edit', edit_proposal_position_path(proposal_position) %></td>
+        <td><%= link_to 'Destroy', proposal_position, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Proposal position', new_proposal_position_path %>

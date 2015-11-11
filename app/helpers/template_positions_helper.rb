@@ -1,0 +1,2 @@
+module TemplatePositionsHelper
+end

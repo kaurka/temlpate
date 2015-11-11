@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  proposal_id: 1
+  price_item_id: 1
+  template_position_id: 1
+  price: 1
+  change_marker: 1
+
+two:
+  proposal_id: 1
+  price_item_id: 1
+  template_position_id: 1
+  price: 1
+  change_marker: 1

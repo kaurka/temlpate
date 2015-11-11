@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Template Positions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Price item</th>
+      <th>Template</th>
+      <th>Template item</th>
+      <th>Order</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @template_positions.each do |template_position| %>
+      <tr>
+        <td><%= template_position.title %></td>
+        <td><%= template_position.price_item_id %></td>
+        <td><%= template_position.template_id %></td>
+        <td><%= template_position.template_item_id %></td>
+        <td><%= template_position.order %></td>
+        <td><%= link_to 'Show', template_position %></td>
+        <td><%= link_to 'Edit', edit_template_position_path(template_position) %></td>
+        <td><%= link_to 'Destroy', template_position, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Template position', new_template_position_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  template_id: 1
+  price_item_id: 1
+  template_item_id: 1
+  order: 1
+
+two:
+  title: MyString
+  template_id: 1
+  price_item_id: 1
+  template_item_id: 1
+  order: 1

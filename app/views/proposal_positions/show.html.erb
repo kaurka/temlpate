@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Proposal:</strong>
+  <%= @proposal_position.proposal_id %>
+</p>
+
+<p>
+  <strong>Price item:</strong>
+  <%= @proposal_position.price_item_id %>
+</p>
+
+<p>
+  <strong>Template position:</strong>
+  <%= @proposal_position.template_position_id %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @proposal_position.price %>
+</p>
+
+<p>
+  <strong>Change marker:</strong>
+  <%= @proposal_position.change_marker %>
+</p>
+
+<%= link_to 'Edit', edit_proposal_position_path(@proposal_position) %> |
+<%= link_to 'Back', proposal_positions_path %>
